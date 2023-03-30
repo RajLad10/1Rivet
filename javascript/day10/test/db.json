@@ -1,0 +1,10 @@
+{
+  "test": [
+    {
+      "id": 1,
+      "name": "Raj",
+      "salary": 20,
+      "city": "xyz@gmail.com"
+    }
+  ]
+}
