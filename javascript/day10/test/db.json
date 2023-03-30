@@ -1,0 +1,22 @@
+{
+  "test": [
+    {
+      "id": 1,
+      "name": "Raj",
+      "salary": 20,
+      "city": "xyz@gmail.com"
+    },
+    {
+      "id": 2,
+      "name": "Jay",
+      "salary": 20,
+      "city": "ABC@gmail.com"
+    },
+    {
+      "name": "Mihir",
+      "age": "1000",
+      "email": "Valsad",
+      "id": 3
+    }
+  ]
+}
