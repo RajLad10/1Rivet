@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS | D11</title>
+
+    <!-- Links to use Google's font : Roboto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+</head>
+<body>
+    <div class="root">
+        
+
+        <div class="main">
+            <input type="checkbox" id="check-box" hidden/>
+            <aside class="sidebar">
+                <div class="sidebar-header">
+                    <img src="icons/angular.png">
+                    <span class="name">Dashboard Kit</span>
+                </div>
+
+                <div class="contents">
+                    <ul class="content-list">
+                        <li>
+                            <i class='fas fa-chart-pie'></i>
+                            <span class="name">Overview</span>
+                        </li>
+                        <li class="active">
+                            <i class='fas fa-address-card'></i>
+                            <span class="name">Tickets</span>
+                        </li>
+                        <li>
+                            <i class='fab fa-medapps'></i>
+                            <span class="name">Ideas</span>
+                        </li>
+                        <li>
+                            <i class='fas fa-users'></i>
+                            <span class="name">Contacts</span>
+                        </li>
+                        <li>
+                            <i class='fas fa-user-tie'></i>
+                            <span class="name">Agents</span>
+                        </li>
+                        <li>
+                            <i class='far fa-file-alt'></i>
+                            <span class="name">Articles</span>
+                        </li>
+                    </ul>
+
+                    <ul class="remaining-list">
+                        <li>
+                            <i class='fas fa-cog'></i>
+                            <span class="name">Settings</span>
+                        </li>
+                        <li class="active">
+                            <i class='fas fa-award'></i>
+                            <span class="name">Subscription</span>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+
+            <article class="article">
+                <header class="article-header">
+                    <div class="heading">
+                        <label class="check-box-label" for="check-box">
+                            <img class="ham-icon" src="icons/hamburger-menu.png" alt="hamburger-icon" />
+                        </label>
+                        <span>Tickets</span>
+                    </div>
+                    <div class="profile">
+                        <button><img src="icons/search.png"></button>
+                        <button class="notification">
+                            <span class="dot"></span>
+                            <img src="icons/notification.png">
+                        </button>
+                        <span class="separator">|</span>
+                        <div class="name-img">
+                            <span>Jones Ferdinand</span>
+                            <button><img src="icons/profile.png"></button>
+                        </div>
+                    </div>
+                </header>
+
+                <div class="ticket-info border bgwhite">
+                    <div class="ticket-header">
+                        <div class="heading">All Tickets</div>
+                        <div class="action">
+                            <button><i class='fas fa-poll'></i> Sort</button>
+                            <button><i class='fas fa-filter'></i> Filter</button>
+                        </div>
+                    </div>
+
+                    <div class="ticket-table">
+                        <table class="table">
+                            <thead>
+                                <tr class="head-row">
+                                    <th>Ticket details</th>
+                                    <th>Customer name</th>
+                                    <th>Date</th>
+                                    <th>Priority</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="body-row">
+                                    <td class="ticket-details">
+                                        <section class="photo">
+                                            <img src="icons/profile.png">
+                                        </section>
+                                        <section class="details">
+                                            <span>Contact Email not Linked</span>
+                                            <small>Updated 1 day ago</small>
+                                        </section>
+                                    </td>
+                                    <td>
+                                        <section class="details">
+                                            <span>Tom Cruise</span>
+                                            <small>On 24.05.2019</small>
+                                        </section>
+                                    </td>
+                                    <td>
+                                        <section class="details">
+                                            <span>May 26, 2019</span>
+                                            <small>6:30 PM</small>
+                                        </section>
+                                    </td>
+                                    <td>
+                                        <span class="priority high">
+                                            HIGH
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <section>
+                                            <img src="icons/dots.png">
+                                        </section>
+                                    </td>
+                                </tr>
+                                <tr class="body-row">
+                                    <td class="ticket-details">
+                                        <section class="photo">
+                                            <img src="icons/profile.png">
+                                        </section>
+                                        <section  class="details">
+                                            <span>Adding images to featured posts</span>
+                                            <small>Updated 1 day ago</small>
+                                        </section>
+                                    </td>
+                                    <td>
+                                        <section class="details">
+                                            <span>Matt Damon</span>
+                                            <small>On 24.05.2019</small>
+                                        </section>
+                                    </td>
+                                    <td>
+                                        <section class="details">
+                                            <span>May 26, 2019</span>
+                                            <small>6:30 PM</small>
+                                        </section>
+                                    </td>
+                                    <td>
+                                        <span class="priority low">
+                                            Low
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <section>
+                                            <img src="icons/dots.png">
+                                        </section>
+                                    </td>
+                                </tr>
+                                <tr class="body-row">
+                                    <td class="ticket-details">
+                                        <section class="photo">
+                                            <img src="icons/profile.png">
+                                        </section>
+                                        <section class="details">
+                                            <span>When will I be charged this month?</span>
+                                            <small>Updated 1 day ago</small>
+                                        </section>
+                                    </td>
+                                    <td>
+                                        <section class="details">
+                                            <span>Robert Downey</span>
+                                            <small>On 24.05.2019</small>
+                                        </section>
+                                    </td>
+                                    <td>
+                                        <section class="details">
+                                            <span>May 26, 2019</span>
+                                            <small>6:30 PM</small>
+                                        </section>
+                                    </td>
+                                    <td>
+                                        <span class="priority high">
+                                            HIGH
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <section>
+                                            <img src="icons/dots.png">
+                                        </section>
+                                    </td>
+                                </tr>
+                                <tr class="body-row">
+                                    <td class="ticket-details">
+                                        <section class="photo">
+                                            <img src="icons/profile.png">
+                                        </section>
+                                        <section class="details">
+                                            <span>Payment not going through</span>
+                                            <small>Updated 2 day ago</small>
+                                        </section>
+                                    </td>
+                                    <td>
+                                        <section class="details">
+                                            <span>Christian Bale</span>
+                                            <small>On 24.05.2019</small>
+                                        </section>
+                                    </td>
+                                    <td>
+                                        <section class="details">
+                                            <span>May 25, 2019</span>
+                                            <small>2:00 PM</small>
+                                        </section>
+                                    </td>
+                                    <td>
+                                        <span class="priority normal">
+                                            NORMAL
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <section>
+                                            <img src="icons/dots.png">                                        
+                                        </section>
+                                    </td>
+                                </tr>
+                                <tr class="body-row">
+                                    <td class="ticket-details">
+                                        <section class="photo">
+                                            <img src="icons/profile.png">
+                                        </section>
+                                        <section class="details">
+                                            <span>Unable to add replies</span>
+                                            <small>Updated 2 day ago</small>
+                                        </section>
+                                    </td>
+                                    <td>
+                                        <section class="details">
+                                            <span>Henry Cavil</span>
+                                            <small>On 24.05.2019</small>
+                                        </section>
+                                    </td>
+                                    <td>
+                                        <section class="details">
+                                            <span>May 25, 2019</span>
+                                            <small>4:00 PM</small>
+                                        </section>
+                                    </td>
+                                    <td>
+                                        <span class="priority high">
+                                            HIGH
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <section>
+                                            <img src="icons/dots.png">                                        
+                                        </section>
+                                    </td>
+                                </tr>
+                                <tr class="body-row">
+                                    <td class="ticket-details">
+                                        <section class="photo">
+                                            <img src="icons/profile.png">
+                                        </section>
+                                        <section class="details">
+                                            <span>Downtime since last week</span>
+                                            <small>Updated 3 day ago</small>
+                                        </section>
+                                    </td>
+                                    <td>
+                                        <section class="details">
+                                            <span>Chris Evans</span>
+                                            <small>On 24.05.2019</small>
+                                        </section>
+                                    </td>
+                                    <td>
+                                        <section class="details">
+                                            <span>May 25, 2019</span>
+                                            <small>2:00 PM</small>
+                                        </section>
+                                    </td>
+                                    <td>
+                                        <span class="priority normal">
+                                            NORMAL
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <section>
+                                            <img src="icons/dots.png">                                        
+                                        </section>
+                                    </td>
+                                </tr>
+                                <tr class="body-row">
+                                    <td class="ticket-details">
+                                        <section class="photo">
+                                            <img src="icons/profile.png">
+                                        </section>
+                                        <section class="details">
+                                            <span>Referral Bonus</span>
+                                            <small>Updated 4 day ago</small>
+                                        </section>
+                                    </td>
+                                    <td>
+                                        <section class="details">
+                                            <span>Sam Smith</span>
+                                            <small>On 24.05.2019</small>
+                                        </section>
+                                    </td>
+                                    <td>
+                                        <section class="details">
+                                            <span>May 25, 2019</span>
+                                            <small>11:30 PM</small>
+                                        </section>
+                                    </td>
+                                    <td>
+                                        <span class="priority low">
+                                            LOW
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <section>
+                                            <img src="icons/dots.png">                                        
+                                        </section>
+                                    </td>
+                                </tr>
+                                <tr class="body-row">
+                                    <td class="ticket-details">
+                                        <section class="photo">
+                                            <img src="icons/profile.png">
+                                        </section>
+                                        <section class="details">
+                                            <span>How do I change my password?</span>
+                                            <small>Updated 6 day ago</small>
+                                        </section>
+                                    </td>
+                                    <td>
+                                        <section class="details">
+                                            <span>Steve Rogers</span>
+                                            <small>On 24.05.2019</small>
+                                        </section>
+                                    </td>
+                                    <td>
+                                        <section class="details">
+                                            <span>May 24, 2019</span>
+                                            <small>1:00 PM</small>
+                                        </section>
+                                    </td>
+                                    <td>
+                                        <span class="priority normal">
+                                            NORMAL
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <section>
+                                            <img src="icons/dots.png">                                        
+                                        </section>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="page-details">    
+                        <section class="page-number">
+                            <small>1-8 of 1240</small>
+                            <button><i class='fas fa-angle-left' style="font-size: 20px;color: gray;"></i></button>
+                            <button><i class='fas fa-angle-right' style="font-size: 20px; color: gray;"></i></button>
+                        </section>
+
+                        <section class="rows-per-page">
+                            <small>Rows per page: </small>
+                            <small class="eight">8 <i class='fas fa-caret-down' style="color: gray;"></i></small>
+                        </section>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+</body>
+</html>
