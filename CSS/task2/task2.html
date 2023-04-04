@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>CSS | T2</title>
+    
+        <style>
+            body{
+                margin-top: 50px;
+            }
+
+            .round{
+                height: 50%;
+                border: 2px solid black;
+                background-image: url(1R.png);
+                background-repeat: round;
+                background-color: grey;
+            }
+
+            .space{
+                height: 60%;
+                border: 2px solid black;
+                background-image: url(1R.png);
+                background-repeat: space;
+                background-color: silver;
+            }
+
+            .sticky{
+                height: 50px;
+                width: 50px;
+                border-radius: 50%;
+                background-color: blue;
+                position: sticky;
+                left: 0;
+                top: 0;
+            }
+
+            .fixed{
+                height: 50px;
+                width: 50px;
+                border-radius: 50%;
+                background-color: black;
+                position: fixed;
+                right: 20px;
+                top: 20px;
+            }
+
+            .empty{
+                height: 20%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="sticky"></div>
+        <div class="round"></div>
+        <div class="empty"></div>
+        <div class="space"></div>
+        <div class="fixed"></div>
+    </body>
+</html>

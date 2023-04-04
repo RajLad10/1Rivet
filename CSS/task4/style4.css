@@ -1,0 +1,415 @@
+html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    /* background-color: #F2F4F7; */
+}
+.root{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+/* Navbar Start */
+.root .second .nav{
+    height: 8%;
+    /* width: 100%; */
+    display: flex;
+    align-items: center;
+    padding: 5px 30px;
+    justify-content: space-between;
+}
+
+/* nav : section: one */
+.root .second .nav .one{
+    border: 2px solid rgb(138, 136, 136);
+    border-radius: 5px;
+    text-indent: 10px; 
+    display: flex;
+    height: 70%;
+    width: 80%;
+}
+
+/* nav : section : one - search icon */
+.root .second .nav .one .search-image{
+    padding: 10px;
+}
+
+/* nav : section : one - input box for search */
+.second .nav .one .input-search{
+    border: none;
+    width: 100%;
+}
+
+/* nav : section : two */
+.root .second .nav .two{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* nav : section : two - buttons of notification, calender, grid and profile */
+.root .second .nav .two .btn{
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    position: relative;
+}
+
+/* nav : section : two - notification red dot */
+.root .second .nav .two .btn .notification{
+    background-color: red;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    position: absolute;
+    top: -4px;
+    right: 4px;
+}
+
+/* Main Start : includes main body except sidebar and navbar */
+.root .second main{
+    background-color: rgb(224, 224, 224);
+    padding: 30px;
+    width: 100%;
+}
+
+/* Main: Black Box  */
+.root .second main .black-box{
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+}
+
+/* Main: Black Box - Upgrade Button */
+.root .second main .black-box .black-box-two .btn-upgrade{
+    display: flex;
+    align-items: center;
+    text-indent: 10px;
+    padding: 0px 25px;
+    border-radius: 40px;
+}
+
+/* Main: Four-boxes */
+.root .second main .four-boxes{
+    display: flex;
+    justify-content:space-between;
+    margin: 30px 0px 10px 0px;
+}
+
+/* Main: Four-boxes : smallcards - general css for all 4 cards */
+.root .second main .four-boxes .smallcards{
+    padding: 15px 13% 20px 15px;
+    border-radius: 12px;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.2);
+    background-color: white;
+}
+
+.root .second main .four-boxes .smallcards h2{
+    margin-top: 3px;
+}
+
+.root .second main .four-boxes .smallcards div{
+    padding-top: 20px;
+}
+
+.root .second main .four-boxes .smallcards small{
+    color: grey
+}
+
+.root .second main .four-boxes .smallcards .green{
+    height: 15px;
+    width: 50px;
+    color: #20C997;
+    background-color: #DCFFF5;
+    border-radius: 20px;
+    align-items: center;
+    padding: 5px 5px;
+}
+
+.root .second main .four-boxes .smallcards .red{
+    height: 15px;
+    width: 50px;
+    color: #DC3545;
+    background-color: #FFE0E3;
+    border-radius: 20px;
+    align-items: center;
+    padding: 5px 5px;
+}
+
+.root .second main .four-boxes .smallcards .grey{
+    height: 15px;
+    width: 50px;
+    color: #5F6980;
+    background-color: #F2F4F7;
+    border-radius: 20px;
+    align-items: center;
+    padding: 5px 5px;
+}
+
+/* Main : Chart Card */
+.root .second main .chart-card{
+    margin: 30px 0px 10px 0px;
+    border-radius: 12px;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    padding: 0px 0px 30px 0px;
+    overflow: hidden;
+}
+
+.root .second main .chart-card .heading{
+    padding: 1px 0px 0px 15px;
+    border-bottom: 1px solid grey;
+    display: flex;
+    justify-content: space-between;
+}
+
+.root .second main .chart-card .heading button{
+    background-color: transparent;
+    border: none;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.root .second main .chart-card .chart img{
+    padding: 30px 0px;
+}
+
+/* Main: chart-card : chart-dots */
+.root .second main .chart-card .chart-dots{
+    display: flex;
+    justify-content: center;
+    /* border: 2px solid rgb(5, 5, 5); */
+    padding: 10px;
+}
+
+.root .second main .chart-card .chart-dots small{
+    display: flex;
+    align-items: center;
+    padding: 3px 0px;
+    width: 5%;
+    justify-content: space-between;
+    margin: 0px 10px;
+}
+
+.root .second main .chart-card .blue-dot{
+    height: 8px;
+    width: 8px;
+    background-color: #5A9CFE;
+    border-radius: 100%;
+}
+
+.root .second main .chart-card .green-dot{
+    height: 8px;
+    width: 8px;
+    background-color: #20C997;
+    border-radius: 100%;
+}
+
+/* Main : .app-details-card */
+.root .second main .app-details-card{
+    margin: 30px 0px 10px 0px;
+    border-radius: 12px;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    /* padding: 0px 0px 30px 0px; */
+}
+
+.root .second main .app-details-card .heading{
+    padding: 1px 0px 0px 15px;
+    border-bottom: 1px solid grey;
+    display: flex;
+    justify-content: space-between;
+}
+
+.root .second main .app-details-card .heading button{
+    background-color: transparent;
+    border: none;
+    padding: 20px;
+    cursor: pointer;
+}
+
+/* Main : app-details-card : Table */
+.table{
+    width: 100%;
+    table-layout: fixed;
+    text-align: center;
+}
+
+.table td{
+    color: #5F6980;
+}
+
+.table .zepplin{
+    display: flex;
+    align-items: center;
+}
+
+table tr{
+    /* border-bottom: 2px solid #EAECF0; */
+    border-bottom: 2px solid black;
+}
+
+.table th{
+    padding: 20px 0px;
+    color: #5F6980;
+    font-weight: normal;
+    background-color: #F9FAFB;
+}
+
+/* Main : App-details-card : Table : Status */
+.table .status{
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+.table .active{
+    background-color: #DCFFF5;
+    color: #20C997;
+}
+
+.table .pending{
+    background-color: #FFEAD8;
+    color: #FD7E14;
+}
+
+.table .cancelled{
+    background-color: #F2F4F7;
+    color: #5F6980;
+}
+
+/* Main : App-details-card : Pagination */
+.pagination{
+    text-align: center;
+    padding: 30px 0px;
+}
+
+.pagination button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.pagination img{
+    height: 15px;
+}
+
+/* Div: one and two */
+.first{
+    width: 232px;
+    padding: 12px 20px 12px 20px;
+    height: 1024px;
+    border: 2px solid black;
+    /* display: block; */
+}
+
+.second{
+    width: 100%;
+}
+
+/* First : Sidebar */
+.first .sidebar{
+    height: 100%;
+    width: 100%;
+}
+
+/* First : Sidebar : Header */
+.first .sidebar .header{
+    margin: 20px 20px ;
+    height: 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar .header .logo-text{
+    display: flex;
+    gap: 0px 5px;
+    align-items: center;
+}
+
+.sidebar .header .logo-text .text{
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.sidebar .dashboard{
+    font-size: 12px;
+    font-weight:bold;
+    letter-spacing: 4px;
+    color: #9D9FA1;
+}
+
+/* First : Sidebar :  sidebar-menu */
+.first .sidebar .sidebar-menu{
+    /* padding: 20px 20px; */
+    width: 100%;
+}   
+
+.first .sidebar .sidebar-menu .expand{
+    background-color: transparent;
+    border: none;
+}
+
+.first .sidebar .sidebar-menu .list1{
+    margin: 20px;
+}
+
+.first .sidebar .sidebar-menu .list2{
+    margin: 16px 25px;
+}
+
+.first .sidebar .sidebar-menu ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+ul a{
+    text-decoration: none;
+    font-family: "Inter";
+    font-weight: 600;
+    color: black;
+    font-size: 18px;
+}
+
+ul li{
+    padding: 0px 0px 12px 0px;
+}
+
+li .grey{
+    color: #5F6980;
+}
+
+ul li span{
+    gap: 0px 10px;
+    display: flex;
+    align-items: center;
+}
+
+ul li div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* 
+.second .nav #toggle-aside:checked, .first {
+    display: none;
+} */
