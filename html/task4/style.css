@@ -1,0 +1,32 @@
+<style>
+    body {
+      background-color: white;
+    }
+
+    .wrapper {
+      width: 700px;
+      margin: 0 auto;
+      padding: 20px 40px;
+      background-color: rgb(231, 225, 225);
+      border-top: 4px solid black;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 20px 0;
+      border-bottom: 1px solid rgb(84, 81, 81);
+      vertical-align: top;
+    }
+
+    h2 {
+      margin: 0;
+    }
+
+    .bold{
+      font-weight: bold;
+    }
+  </style>
