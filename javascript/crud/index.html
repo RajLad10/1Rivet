@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS | CRUD</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="form-container bgwhite">
+            <form>
+                <div>
+                    <label for="firstName">
+                        First Name<sup>*</sup> :
+                    </label>
+                    <input type="text" id="firstName" #nameInput oninput="firstNameValidation();">
+                    <p id="firstName-warning">Please enter a valid first name*</p>
+                </div>
+
+                <div>
+                    <label for="lastName">
+                        Last Name<sup>*</sup> :
+                    </label>
+                    <input type="text" id="lastName" oninput="lastNameValidation()">
+                    <p id="lastName-warning">Please enter a valid last name*</p>
+                </div>
+
+                <div>
+                    <label for="email">
+                        Email<sup>*</sup> :
+                    </label>
+                    <input type="text" id="email" oninput="emailValidation()">
+                    <p id="email-warning">Please enter a valid email address*</p>
+                </div>
+
+                <div>
+                    <label for="phoneNumber">
+                        Phone Number<sup>*</sup> :
+                    </label>
+                    <input type="text" id="phoneNumber" oninput="phoneNumberValidation()">
+                    <p id="phoneNumber-warning">Please enter a valid phone number*</p>
+                </div>
+
+                <div>
+                    <label for="password">
+                        Password<sup>*</sup> :
+                    </label>
+                    <input type="password" id="password" oninput="passwordValidation()">
+                    <p id="password-warning">Password length : 8 to 16 characters.
+                        [Format: 1 uppercase, 1 lowercase, 1 special character, 1 number]</p>
+                </div>
+
+                <div class="submitBtn">
+                    <button type="button" id="pushBtn" onclick="pushData()";>Submit</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="table-container bgwhite">
+            <table id="table" class="table"></table>
+        </div>
+    </div>
+
+    <script src="script.js" type="text/javascript"></script>
+</body>
+
+</html>

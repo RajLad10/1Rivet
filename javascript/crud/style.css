@@ -1,0 +1,102 @@
+html{
+    width: 100%;
+}
+
+body{
+    width: 100%;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    font-size: 14px;
+    background-color: lightblue;
+}
+
+.bgwhite{
+    background-color: white;
+}
+
+.border{
+    border: 1px solid black;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 250px;
+    gap: 30px;
+}
+
+.main .form-container{
+    padding: 20px 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    box-shadow: 5px 5px 10px #727171;
+}
+
+.main .form-container form {
+    padding: 20px 20px;
+}
+
+.main .form-container form .submitBtn{
+    text-align: center;
+    padding-top: 10px;
+}
+
+.main .form-container form .submitBtn #pushBtn{
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background-color: rgb(38, 101, 38);
+    color: white;
+    font-weight: bold;
+    /* display: none; */
+}
+
+.main .form-container form div{
+    margin-bottom: 10px;
+}
+
+.main .form-container form div label{
+    font-size: large;
+}
+
+.main .form-container form div input{
+    width: 100%;
+    height: 30px;
+    border-radius: 8px;
+    border: 1px solid rgb(176, 175, 175);
+    text-indent: 10px;
+}
+
+.main .form-container form div sup, .main .form-container form div p{
+    color: red;
+}
+
+.main .form-container form div p{
+    display: none;
+}
+
+.main .table-container{
+    padding: 20px 20px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px #727171;
+    overflow-x: auto;
+}
+
+.main .table-container .table{
+    text-align: center;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.main .table-container .table thead{
+    font-weight: bold;
+}
+
+tr,td{
+    border: 1px solid black;
+    padding: 10px 5px;
+}
+
