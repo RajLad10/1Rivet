@@ -1,0 +1,27 @@
+<p>child works!</p>
+
+<!-- <h1>{{n}}</h1> -->
+
+<table border="1">
+    <thead>
+        <tr *ngFor="let th of head">
+            <th >{{th.eid}}</th>
+            <th>{{th.name}}</th>
+            <th>{{th.department}}</th>
+            <th>{{th.city}}</th>
+            <th>{{th.action}}</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of emp">
+            <td >{{item.eid}}</td>
+            <td>{{item.name}}</td>
+            <td>{{item.department}}</td>
+            <td>{{item.city}}</td>
+            <td>
+                <button>Edit</button>
+                <button>Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
