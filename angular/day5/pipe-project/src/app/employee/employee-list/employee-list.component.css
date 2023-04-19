@@ -1,0 +1,56 @@
+
+.main{
+    width: 100%;
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 2px solid gray;
+}
+
+.main .search-container{
+    padding: 25px 25px;
+}
+
+.main .search-container .search-input{
+    height: 40px;
+    width: 200px;
+    text-indent: 10px;
+}
+
+.main .table-container{
+    overflow-x: auto;
+    padding: 25px 25px;
+    /* border: 2px solid gray; */
+}
+
+.main .table-container .table{
+    width: 100%;
+    text-align: left;
+    border: 1px solid gray;
+    padding: 10px 10px;
+}
+
+.main .table-container .table tbody tr:nth-child(even){
+    background-color: rgb(229, 229, 253);
+}
+
+.main .table-container .table tbody tr:nth-child(even) td:first-child{
+    border-left: 3px solid blue;
+}
+
+.main .table-container .table td,.main .table-container .table th{
+    padding: 10px 0px;
+}
+
+.main .table-container .table tbody td span{
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+.main .table-container .table tbody .action-col{
+    display: flex;
+    gap: 20px;
+}
+

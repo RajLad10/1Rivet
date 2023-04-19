@@ -1,0 +1,31 @@
+<div class="main">
+    <div class="search-container">
+        <input type="search" class="search-input" placeholder="Search..." [(ngModel)]="textSearch">
+    </div>
+
+    <div class="table-container">
+        <table class="table">
+            <thead>
+                <tr *ngFor="let th of headings">
+                    <th>{{th.id}}</th>
+                    <th>{{th.name}}</th>
+                    <th>{{th.department}}</th>
+                    <th>{{th.empType}}</th>
+                    <th>{{th.action}}</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of employees | search: textSearch">
+                    <td>{{item.id}}</td>
+                    <td>{{item.name | shorten}}</td>
+                    <td>{{item.department}}</td>
+                    <td>{{item.empType}}</td>
+                    <td class="action-col">
+                        <button>Edit</button>
+                        <button>Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
