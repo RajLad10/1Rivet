@@ -1,0 +1,42 @@
+body{
+    background-color: #E5E5E5;
+    /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+}
+
+.card{
+    width: 500px;
+}
+
+.txt-title{
+    font-size: 24px;
+}
+
+.txt-subtitle{
+    font-size: 18px;
+}
+
+.star{
+    height: 20px;
+}
+
+.greyColor{
+    color: #607D8A;
+    font-size: 16px;
+}
+
+.title{
+    font-size: 13px;
+    color: #90A4AE;
+}
+
+.active-dot{
+    height: 8px;
+    width: 8px;
+    background-color: green;
+    display: block;
+    text-align: center;
+}
+
+.button-text{
+    font-weight: bold;
+}
